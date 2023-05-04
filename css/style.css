@@ -46,13 +46,6 @@ span {
   padding: 0px 40px;
 }
 
-/* .active {
-  color: #fc036b;
-  border-radius: 20px;
-  background: whitesmoke;
-  font-weight: bold;
-} */
-
 body,
 html {
   overflow-x: hidden;
@@ -180,7 +173,7 @@ header {
   font-weight: 700;
   padding: 13px 50px;
   background: #fc036b;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   color: whitesmoke;
 }
 
@@ -213,8 +206,12 @@ section {
 }
 
 .card {
-  cursor: pointer;
-  height :400px
+  /* cursor: pointer; */
+  height :400px;
+}
+
+.card img {
+	height: 16rem;
 }
 
 .row .col {
@@ -680,13 +677,6 @@ img:hover {
   border: 2px solid whitesmoke;
   border-radius: 20px;
   color: #fc036b;
-  cursor: pointer;
-}
-
-.ctn:hover {
-  background: whitesmoke;
-  color: #fc036b;
-  box-shadow: 2px 2px 5px #00000056;
   cursor: pointer;
 }
 
