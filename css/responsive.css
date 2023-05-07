@@ -44,6 +44,20 @@
   .nav-links li {
     margin: 30px auto;
   }
+  #about {
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; */
+	margin-left: 0px;
+  }
+  #about_us {
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; */
+	margin-left: 0px;
+  }
 }
 @media only screen and (max-width: 850px) {
   /*events*/
@@ -108,8 +122,9 @@
     height: 100%;
   }
   #about_us ul {
+	
 	margin: 15%;
-	max-width: 24rem;
+	max-width: 24re	m;
 	}
 }
 @media screen and (max-width: 470px) {
@@ -131,9 +146,10 @@
   .c_boxx a p {
     font-size: 16px;
   }
+  /* #abou */
   #about_us ul {
 	margin: 15%;
-	max-width: 16rem;
+	max-width: 15rem;
 	}
 
 }
