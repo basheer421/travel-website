@@ -162,7 +162,7 @@ header {
 }
 
 .header-content h1 {
-  font-size: 7vmin;
+  font-size: 2vmin;
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -370,21 +370,49 @@ section {
   background-size: cover;
   background-attachment: fixed;
   margin: 30px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
 }
 
-#about_us p {
-  width: 43em;
-  color: white;
-  text-align: justify;
-  padding-top: 14em;
-  font-family: "Work Sans", sans-serif;
-  margin-left: 6em;
+#about_us ul {
+	width: 43em;
+	color: white;
+	text-align: justify;
+	font-family: "Work Sans", sans-serif;
+	margin-left: 6em; 
+	margin-top: 2em;
+	color: #000;
+	max-width: 700px;
+	position: relative;
+
 }
 
-#about_us p::first-letter {
-  padding-left: 47px;
-  font-size: 55px;
-  color: #fc036b;
+#about_us ul::before {
+	content: '';
+	width: 0.5rem;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 8%;
+	background: peachpuff;
+	z-index: -1;
+}
+
+
+#about_us li {
+	padding: 0.5rem 1.5rem 1rem;
+	border-radius: 1.5rem;
+	background: #fc036bae;
+	margin: .5em;
+	color: #ccc;
+}
+
+#about_us .boxx .notes-header{
+	margin-left: 3em;
+	font-size: 18px;
+	color: #fc036b;
+	font-family: "Work Sans", sans-serif;
 }
 
 /* Contributors */

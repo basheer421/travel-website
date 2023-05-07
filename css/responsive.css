@@ -76,17 +76,15 @@
   .content-col {
     width: 100%;
   }
-  #about_us p {
-    width: 70%;
-  }
+  
+	#about_us ul {
+		max-width: 60%;
+	}
+
 }
 
 @media screen and (max-width: 770px) {
-  #about_us p {
-    width: 85%;
-    padding-top: 7em;
-    margin: auto;
-  }
+	
   form,
   .cbox {
     width: 90%;
@@ -106,9 +104,13 @@
   }
 }
 @media screen and (max-width: 600px) {
-  #about_us p {
-    margin: auto;
+  #about_us {
+    height: 100%;
   }
+  #about_us ul {
+	margin: 15%;
+	max-width: 24rem;
+	}
 }
 @media screen and (max-width: 470px) {
   .ctn {
@@ -117,6 +119,10 @@
   .c_boxx a p {
     font-size: 17.5px;
   }
+  #about_us ul {
+	margin: 15%;
+	max-width: 20rem;
+	}
 }
 @media screen and (max-width: 400px) {
   .ctn {
@@ -125,6 +131,11 @@
   .c_boxx a p {
     font-size: 16px;
   }
+  #about_us ul {
+	margin: 15%;
+	max-width: 16rem;
+	}
+
 }
 
 @media (max-width: 850px) {
