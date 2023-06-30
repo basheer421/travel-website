@@ -1,22 +1,118 @@
 /* Google fonts */
 
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=gotham:wght@400;700&family=gotham:wght@400;800&family=Parisienne&family=gotham&family=Teko:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+@font-face {
+  font-family: 'gotham';
+  src: url('fonts/EntezareZohoor2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/GothamLight.ttf") format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/JostVariableFont_wght.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/GothamLightItalic.ttf") format('truetype');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/GothamMediumItalic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/CarneroBold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/GothamMedium_1.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/JostItalicVariableFont_wght.ttf") format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/GothamBold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/GothamBook.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/GothamBoldItalic.ttf") format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/GothamBookItalic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url("./gotham/GothamMedium.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Root element (aka html) */
 :root {
   box-sizing: border-box;
   scroll-behavior: smooth;
 
+  
+
   /* CSS Variables */
   /* Fonts */
   --ff-parisienne: "Parisienne", cursive;
-  --ff-montserrat: "Montserrat", sans-serif;
-  --ff-lora: "Lora", serif;
-  --ff-roboto: "Roboto", sans-serif;
+  --ff-gotham: "gotham", sans-serif;
+  --ff-gotham: "gotham", serif;
+  --ff-gotham: "gotham", sans-serif;
   --ff-rubik-dirt: "Rubik Dirt", cursive;
   --fs-paragraphs: calc(0.8rem + 0.35vw);
   --fs-links-btns: calc(0.65rem + 0.5vw);
+  --theme-yellow: #D7C799;
+  --theme-green: #263A2D;
+
 }
 
 /* Global */
@@ -50,6 +146,7 @@ body,
 html {
   overflow-x: hidden;
   box-sizing: border-box;
+  background-color: var(--theme-yellow);
 }
 
 .container {
@@ -106,7 +203,7 @@ html {
 }
 
 .nav-links li {
-  font-family: var(--ff-montserrat);
+  font-family: var(--ff-gotham);
   margin: 0px 15px;
 }
 
@@ -126,7 +223,7 @@ html {
 header {
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg.jpg");
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
@@ -136,7 +233,7 @@ header {
 }
 
 .header-content {
-  font-family: var(--ff-lora);
+  font-family: var(--ff-gotham);
   letter-spacing: 0.1rem;
   color: whitesmoke;
   text-align: center;
@@ -156,7 +253,7 @@ header {
 .line {
   width: 150px;
   height: 4px;
-  background: #fc036b;
+  background: var(--theme-green);
   margin: 10px auto;
   border-radius: 5px;
 }
@@ -168,11 +265,11 @@ header {
 }
 
 .ctn {
-  font-family: var(--ff-montserrat);
+  font-family: var(--ff-gotham);
   font-size: var(--fs-links-btns);
   font-weight: 700;
   padding: 13px 50px;
-  background: #fc036b;
+  background: var(--theme-green);
   /* border-radius: 30px; */
   color: whitesmoke;
 }
@@ -194,7 +291,7 @@ section {
 
 .title {
   text-align: center;
-  font-family: var(--ff-montserrat);
+  font-family: var(--ff-gotham);
   font-size: 4vmin;
 }
 
@@ -233,14 +330,14 @@ section {
 .col > h4 {
   font-size: calc(1rem + 0.5vw);
   margin: 20px auto;
-  font-family: var(--ff-lora);
+  font-family: var(--ff-gotham);
 }
 
 .col p {
   color: #7c7c7c;
   padding: 0px 40px;
   font-size: var(--fs-paragraphs);
-  font-family: var(--ff-roboto);
+  font-family: var(--ff-gotham);
 }
 
 .col > p {
@@ -269,7 +366,7 @@ section {
 }
 
 .explore-content {
-  font-family: var(--ff-lora);
+  font-family: var(--ff-gotham);
   color: whitesmoke;
   display: flex;
   align-items: center;
@@ -347,7 +444,7 @@ section {
 
 .content-col h1 {
   font-size: calc(2.2rem + 1vw);
-  font-family: var(--ff-lora);
+  font-family: var(--ff-gotham);
   max-width: 15.5ch;
 }
 
@@ -414,14 +511,14 @@ section {
 #about_us li {
 	padding: 0.5rem 1.5rem 1rem;
 	border-radius: 1.5rem;
-	background: #fc036bae;
+	background: var(--theme-green)ae;
 	margin: .5em;
 	color: #ccc;
 }
 
 #about_us .boxx .notes-header{
 	font-size: 18px;
-	color: #fc036b;
+	color: var(--theme-green);
 	font-family: "Work Sans", sans-serif;
 }
 
@@ -436,7 +533,7 @@ section {
   width: 100%;
   min-height: 100vh;
   background-color: #000;
-  font-family: "Montserrat", sans-serif;
+  font-family: "gotham", sans-serif;
 }
 
 .concard {
@@ -495,7 +592,7 @@ section {
 .contact_us {
   margin-top: 3rem;
   display: flex;
-  font-family: var(--ff-roboto);
+  font-family: var(--ff-gotham);
 }
 
 form {
@@ -533,19 +630,19 @@ form {
   padding: 1em;
   margin-bottom: 2em;
   padding-left: 2em;
-  border: 0.1em solid #fc036b;
-  background-color: #fc036b;
+  border: 0.1em solid var(--theme-green);
+  background-color: var(--theme-green);
   color: white;
   display: flex;
   border-radius: 2em;
   align-items: center;
-  border: #fc036b 0.1em solid;
+  border: var(--theme-green) 0.1em solid;
   font-size: 1em;
 }
 
 .c_boxx a:hover {
   background-color: white;
-  color: #fc036b;
+  color: var(--theme-green);
   transition: all 0.5s ease;
 }
 
@@ -571,19 +668,19 @@ label {
 }
 
 input[type="submit"] {
-  background-color: #fc036b;
+  background-color: var(--theme-green);
   color: whitesmoke;
   padding: 12px 50px;
-  border: 2px solid #fc036b;
+  border: 2px solid var(--theme-green);
   border-radius: 100vmax;
   cursor: pointer;
-  font-family: var(--ff-montserrat);
+  font-family: var(--ff-gotham);
   font-size: var(--fs-links-btns);
 }
 
 input[type="submit"]:hover {
   background-color: whitesmoke;
-  color: #fc036b;
+  color: var(--theme-green);
 }
 
 .cform {
@@ -612,7 +709,7 @@ input[type="submit"]:hover {
   width: 20%;
   display: block;
   height: 1em;
-  border-bottom: 3px solid #fc036b;
+  border-bottom: 3px solid var(--theme-green);
 }
 
 .ccol-left {
@@ -644,7 +741,7 @@ input[type="submit"]:hover {
 
 .crow-s {
   margin: 1em;
-  color: #fc036b;
+  color: var(--theme-green);
 }
 
 /* footer */
@@ -688,7 +785,7 @@ input[type="submit"]:hover {
 }
 
 .social a:hover {
-  background-color: #fc036b;
+  background-color: var(--theme-green);
 }
 
 .social i {
@@ -707,19 +804,19 @@ img:hover {
 }
 
 .cir_border:hover{
-    color: #fc036b
+    color: var(--theme-green)
 }
 
 
 .active {
   border: 2px solid whitesmoke;
   border-radius: 20px;
-  color: #fc036b;
+  color: var(--theme-green);
   cursor: pointer;
 }
 
 .nav-links .ctn:hover a {
-  color: #fc036b;
+  color: var(--theme-green);
 }
 
 body {
@@ -791,7 +888,7 @@ body.dark{
   font-size: 40px; 
 }
 #upbtn:hover {
-  background-color: #fc036b; 
+  background-color: var(--theme-green); 
 }
 
 #quote {
@@ -801,7 +898,7 @@ body.dark{
   font-size: 2em;
   letter-spacing: 4px;
   overflow: hidden;
-  background: linear-gradient(45deg, #fc036b, #fff, #41031d);
+  background: linear-gradient(45deg, var(--theme-green), #fff, #41031d);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 8s linear infinite;
