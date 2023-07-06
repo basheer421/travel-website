@@ -23,7 +23,7 @@
 				<h1 class="logo">Socotra Time</h1>
 			</a>
 		</span>
-		<ul class="nav-links">
+		<ul class="nav-links hide">
 			<li><a href="#home" id="pri" class="active cir_border">Home</a></li>
 			<li><a href="#events" id="sec" class="cir_border">Packages</a></li>
 			<li><a href="#explore" id="tri" class="cir_border">Discover</a></li>
@@ -137,12 +137,6 @@
 		</div>
 	</section>
 	<!--Events-->
-	
-
-
-
-
-
 
 	<!-- Contact -->
 	<section id="contact">
@@ -211,6 +205,7 @@
 
 
 		menuBtn.addEventListener('click', () => {
+			navlinks.classList.toggle('hide')
 			navlinks.classList.toggle('mobile-menu')
 		})
 	</script>

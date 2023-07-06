@@ -11,6 +11,12 @@
   }
 }
 @media screen and (max-width: 1130px) {
+
+  .hide
+  {
+    display: none;
+  }
+
   .menu-btn {
     display: block;
   }
