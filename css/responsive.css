@@ -21,15 +21,14 @@
     display: block;
   }
 
-  .navbar {
+  /* .navbar {
     padding: 45px;
-  }
+  } */
 
-  .logo {
-    position: absolute;
-    top: 30px;
-    left: 15px;
-  }
+  /* .logo {
+    height: auto;
+    width: auto;
+  } */
 
   .nav-links {
     flex-direction: column;

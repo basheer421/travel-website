@@ -178,22 +178,20 @@ html {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 5px;
+  padding: 2% 2%;
   z-index: 10;
   color: whitesmoke;
 }
 
 .logo {
-  font-family: var(--ff-rubik-dirt);
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  padding: 0 1.2rem;
-  font-weight: 300;
-  color: rgb(254, 252, 252); 
-  
-  
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+  height: 60px;
+  width: auto;
 }
+
 
 .nav-links {
   display: flex;
