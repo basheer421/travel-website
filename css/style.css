@@ -1,16 +1,8 @@
 /* Google fonts */
 
-@import url("https://fonts.googleapis.com/css2?family=gotham:wght@400;700&family=gotham:wght@400;800&family=Parisienne&family=gotham&family=Teko:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
 
-@font-face {
-  font-family: 'gotham';
-  src: url('fonts/EntezareZohoor2.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
+/* @font-face {
   font-family: 'gotham';
   src: url("./gotham/GothamLight.ttf") format('truetype');
   font-weight: lighter;
@@ -92,7 +84,7 @@
   src: url("./gotham/GothamMedium.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 /* Root element (aka html) */
 :root {
@@ -195,6 +187,11 @@ html {
   left: 30px;
   height: 60px;
   width: auto;
+  content: url("../img/logo_wh.png");
+}
+
+.logo.dark {
+  content: url("../img/logo.png");
 }
 
 
@@ -948,6 +945,7 @@ body.dark{
   background-size: 80%;
   animation: animate 8s linear infinite;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
