@@ -158,11 +158,6 @@ html {
   border-radius: 10px;
 }
 
-.vertical {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Navbar */
 
 .navbar {
@@ -241,7 +236,7 @@ header {
 }
 
 .header-content a {
-  letter-spacing: 0.1rem;
+  letter-spacing: 0;
 }
 
 .header-content h2 {
@@ -260,6 +255,7 @@ header {
   font-size: 2vmin;
   margin-top: 50px;
   margin-bottom: 30px;
+  letter-spacing: .5px;
 }
 
 .ctn {
@@ -368,7 +364,7 @@ section {
   color: whitesmoke;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; 
   margin-left: 8rem;
   position: relative;
   z-index: 1;
@@ -470,8 +466,7 @@ section {
 }
 
 #about_us {
-  /* background: url("../img/about-img.jpg"); */
-  background-position: right 20px bottom 10px;
+  background: url("../img/bg.jpg");
   width: 100%;
   height: fit-content;
   background-repeat: no-repeat;
@@ -480,6 +475,19 @@ section {
   display: flex;
   flex-direction: column;
   align-items:center;
+}
+
+.boxx {
+  font-family: var(--ff-gotham);
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 8rem;
+  position: relative;
+  z-index: 1;
+  padding: 2rem 17px;
+  margin: auto;
 }
 
 #about_us ul {
@@ -505,11 +513,9 @@ section {
 	z-index: -1;
 }
 
-
 #about_us li {
 	padding: 0.5rem 1.5rem 1rem;
 	border-radius: 1.5rem;
-	background: var(--theme-green)ae;
 	margin: .5em;
 	color: #ccc;
   color: white;
@@ -528,25 +534,35 @@ section {
 
 .box img {
   width: 120px;
-  /* height: 100px; */
   margin-right: 10px;
 }
 
 .box {
   display: flex;
   align-items: center;
-  /* padding: 10px; */
-  background-color: var(--theme-yellow);
   margin-bottom: 5px;
   border-radius: 2rem;
 }
 
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2.5px);
+  border-radius: 0.5rem;
+}
+
 
 .box .vertical {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 0;
-  margin-top: 0;
+  margin: .5em auto;
+  padding: .5em;
+}
+
+.box .vertical h2 {
+  margin-bottom: .5em;
 }
 
 .box p {
@@ -691,7 +707,6 @@ form {
 .c_boxx i {
   font-size: 38px;
   margin-right: 10px;
-  /* margin-left: 0.5em; */
 }
 
 input[type="text"],
@@ -939,14 +954,7 @@ body.dark{
   text-transform: uppercase;
   font-size: 2em;
   letter-spacing: 4px;
-  overflow: hidden;
-  background: linear-gradient(45deg, var(--theme-green), #fff, #41031d);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 8s linear infinite;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  color: var(--theme-green);
 }
 
 @keyframes animate {
