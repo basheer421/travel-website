@@ -1,3 +1,19 @@
+let closeMenuBtns = document.querySelectorAll('.cir_border')
+const menuBtn = document.querySelector('.menu-btn')
+const navlinks = document.querySelector('.nav-links')
+
+closeMenuBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    navlinks.classList.toggle('hide')
+    navlinks.classList.toggle('mobile-menu')
+  })
+})
+
+menuBtn.addEventListener('click', () => {
+  navlinks.classList.toggle('hide')
+  navlinks.classList.toggle('mobile-menu')
+})
+
 function removeall() {
   $(".cir_border").css("border", "none");
 }
@@ -30,28 +46,6 @@ $("#hex").on("click", function () {
   removeall();
   $("#hex").css("border", "2px solid whitesmoke");
   $("#hex").css("border-radius", "20px");
-});
-
-// Light/Dark toggle
-const checkbox = document.getElementById('checkbox');
-const logo = document.querySelector('.logo');
-
-function checkDarkMode(){
-  if (localStorage.getItem("tourism_website_darkmode") !== null && localStorage.getItem("tourism_website_darkmode") === "true") {
-    document.body.classList.add('dark');
-    logo.classList.add('dark');
-    checkbox.checked = true;
-  }
-};
-
-checkDarkMode();
-
-checkbox.addEventListener('change', () => {
-  document.body.classList.toggle('dark');
-  logo.classList.toggle('dark');
-  document.body.classList.contains('dark') ? 
-    localStorage.setItem("tourism_website_darkmode", true) :
-    localStorage.setItem("tourism_website_darkmode", false); 
 });
 
 // scroll button
