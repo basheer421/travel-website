@@ -41,15 +41,6 @@
     display: block;
   }
 
-  /* .navbar {
-    padding: 45px;
-  } */
-
-  /* .logo {
-    height: auto;
-    width: auto;
-  } */
-
   .nav-links {
     flex-direction: column;
     width: 100%;
