@@ -598,6 +598,7 @@ form {
   align-items: center;
   border: var(--theme-green) 0.1em solid;
   font-size: 1em;
+  width: 110%;
 }
 
 .c_boxx a:hover {
@@ -752,6 +753,16 @@ input[type="submit"]:hover {
   display: inline;
   text-align: center;
   color: whitesmoke;
+}
+
+i.tiktok {
+  display: inline-block;
+  background-image: url('../img/tiktok.svg');
+  width: 1em;
+  height: 1em;
+  background-size: contain;
+  vertical-align: -.125em;
+  background-repeat: no-repeat;
 }
 
 /* animations */
