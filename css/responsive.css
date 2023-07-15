@@ -150,10 +150,6 @@
     padding: 20px;
   }
 
-  .line {
-    display: none;
-  }
-
   #about_us {
     display: flex;
     flex-direction: column;
