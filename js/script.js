@@ -85,7 +85,7 @@ var options = {
 "brandSetting":{
   "brandName":"socotraescape",
   "brandSubTitle":"undefined",
-  "brandImg":"https://socotratime.com/img/logo.png",
+  "brandImg":"https://socotratime.com/img/logo.jpg",
   "welcomeText":"Hi there!\nHow can I help you?",
   "messageText":"",
   "backgroundColor":"#00e785",
