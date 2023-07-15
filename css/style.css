@@ -137,12 +137,13 @@ header {
   justify-content: center;
 }
 
-#myVideo {
+#bg-video {
   position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100vmin;
+  object-fit: fill;
 }
 
 .header-content {
@@ -737,8 +738,16 @@ input[type="submit"]:hover {
 }
 
 .social {
-  width: 360px;
-  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity */
+  backdrop-filter: blur(10px); /* Adjust the blur effect */
+  width: 300px;
+  height: 5em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: 2em;
 }
 
 .social li {
@@ -746,11 +755,12 @@ input[type="submit"]:hover {
 }
 
 .social a {
-  margin-right: 10px;
+  /* margin-right: 10px; */
   font-size: 18px;
   background-color: transparent;
   border-radius: 50%;
   padding: 5px 8px;
+  margin: .3em;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
