@@ -2,90 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
 
-/* @font-face {
-  font-family: 'gotham';
-  src: url("./gotham/GothamLight.ttf") format('truetype');
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'gotham';
-  src: url("./gotham/JostVariableFont_wght.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'gotham';
-  src: url("./gotham/GothamLightItalic.ttf") format('truetype');
-  font-weight: lighter;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'gotham';
-  src: url("./gotham/GothamMediumItalic.ttf") format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'gotham';
-  src: url("./gotham/CarneroBold.ttf") format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'gotham';
-  src: url("./gotham/GothamMedium_1.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'gotham';
-  src: url("./gotham/JostItalicVariableFont_wght.ttf") format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'gotham';
-  src: url("./gotham/GothamBold.ttf") format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'gotham';
-  src: url("./gotham/GothamBook.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'gotham';
-  src: url("./gotham/GothamBoldItalic.ttf") format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'gotham';
-  src: url("./gotham/GothamBookItalic.ttf") format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'gotham';
-  src: url("./gotham/GothamMedium.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-} */
-
 /* Root element (aka html) */
 :root {
   box-sizing: border-box;
@@ -96,9 +12,9 @@
   /* CSS Variables */
   /* Fonts */
   --ff-parisienne: "Parisienne", cursive;
-  --ff-gotham: "gotham", sans-serif;
-  --ff-gotham: "gotham", serif;
-  --ff-gotham: "gotham", sans-serif;
+  --ff-gotham: sans-serif cursive;
+  --ff-gotham: serif cursive;
+  --ff-gotham: sans-serif cursive;
   --ff-rubik-dirt: "Rubik Dirt", cursive;
   --fs-paragraphs: calc(0.8rem + 0.35vw);
   --fs-links-btns: calc(0.65rem + 0.5vw);
@@ -216,10 +132,6 @@ html {
 header {
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/bg.jpg");
-  background-position: bottom;
-  background-attachment: fixed;
-  background-size: cover;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -265,7 +177,6 @@ header {
   font-weight: 700;
   padding: 13px 50px;
   background: var(--theme-green);
-  /* border-radius: 30px; */
   color: whitesmoke;
 }
 
@@ -351,10 +262,6 @@ section {
 .explore {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/bg.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -467,12 +374,6 @@ section {
 }
 
 #about_us {
-  background: url("../img/bg.jpg");
-  width: 100%;
-  height: fit-content;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -808,8 +709,9 @@ input[type="submit"]:hover {
   min-height: 100px;
   padding: 20px 80px;
   margin: 0;
-  background: #222;
+  background: black;
   text-align: center;
+  position: absolute;
 }
 
 .footer p {
@@ -878,7 +780,11 @@ img:hover {
 }
 
 body {
- background-color: black;
+  background-image: url("../img/bg.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
 }
 
