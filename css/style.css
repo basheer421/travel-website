@@ -241,6 +241,7 @@ header {
 
 .header-content h2 {
   font-size: 4vmin;
+  margin: 4vmin auto;
 }
 
 .line {
