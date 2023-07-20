@@ -80,7 +80,7 @@ var options = {
   "marginRight": "20",
   "marginBottom": "20",
   "ctaIconWATI":false,
-  "position":"left"
+  "position":"right"
 },
 "brandSetting":{
   "brandName":"socotraescape",
