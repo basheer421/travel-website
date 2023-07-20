@@ -48,23 +48,6 @@ $("#hex").on("click", function () {
   $("#hex").css("border-radius", "20px");
 });
 
-// scroll button
-let mybutton = document.getElementById("upbtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0; 
-}
-
 var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?66623';
 var s = document.createElement('script');
 s.type = 'text/javascript';
