@@ -83,3 +83,11 @@ s.onload = function() {
 };
 var x = document.getElementsByTagName('script')[0];
 x.parentNode.insertBefore(s, x);
+
+// Choose ver or hor video
+const vid = document.getElementById("bg-video");
+if (screen.width <= 600)
+{
+  vid.setAttribute("src", "video/ver_background_vid.webm");
+}
+vid.load();
