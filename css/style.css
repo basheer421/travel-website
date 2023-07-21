@@ -606,7 +606,7 @@ form {
   border-radius: 2em;
   align-items: center;
   border: var(--theme-green) 0.1em solid;
-  font-size: 1em;
+  font-size: 2.5vh;
   width: 110%;
 }
 

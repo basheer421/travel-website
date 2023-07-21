@@ -179,17 +179,21 @@
     margin-bottom: 10px;
   }
 }
+
 @media screen and (max-width: 470px) {
   .ctn {
     padding: 13px 25px;
-  }
-  .c_boxx a p {
-    font-size: 17.5px;
   }
   #about_us ul {
 	margin: 15%;
 	max-width: 20rem;
 	}
+}
+
+@media (max-width: 400px) {
+  .c_boxx a {
+    font-size: 1.5vh;
+  }
 }
 
 @media (max-width: 850px) {
