@@ -590,14 +590,15 @@ form {
 .c_boxx a {
   padding: 1em;
   margin-bottom: 2em;
-  background-color: var(--theme-yellow);
+  /* background-color: var(--theme-yellow); */
   color: white;
   display: flex;
   border-radius: 2em;
   align-items: center;
-  border: var(--theme-green) 0.1em solid;
+  /* border: var(--theme-green) 0.1em solid; */
   font-size: 2.5vh;
   width: fit-content;
+  font-weight: bold;
 }
 
 .c_boxx a:hover {
