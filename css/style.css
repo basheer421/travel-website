@@ -30,6 +30,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  width: auto;
 }
 
 img {
@@ -153,6 +154,7 @@ header {
   text-align: center;
   z-index: 1;
   padding: 4rem;
+  margin: auto; 
   margin-bottom: 150px;
 }
 
@@ -220,6 +222,7 @@ section {
 .card {
   /* cursor: pointer; */
   height :400px;
+  flex: 1;
 }
 
 .card img {

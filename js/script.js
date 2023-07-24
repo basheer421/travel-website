@@ -86,8 +86,8 @@ x.parentNode.insertBefore(s, x);
 
 // Choose ver or hor video
 const vid = document.getElementById("bg-video");
-if (screen.width <= 600)
+if (screen.width <= 1000)
 {
-  vid.setAttribute("src", "video/ver_background_vid.webm");
+  vid.setAttribute("src", "video/ver_background_vid.mp4");
 }
 vid.load();
